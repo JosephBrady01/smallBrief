@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SearchResults.css">
+    <script src="SearchResults.js"></script>
+    <title>Search Result redesign</title>
+</head>
+
+<!--The function loads with the page so that the extra content stays hidden-->
+<body onload="toggleText()">
+    <section id-="test" class="frame">
+
+        <section class="Profile-background">
+            <img class="Profile-Picture" src="Images/ProfilePicture.jpg" alt="Profile Picture">
+        </section>
+
+        <!--The Eclipse shape was created by shaping normal rectangle in CSS-->
+        <section class="Summary-background"></section>
+
+        <!--The Smmary data will always be visible to identify the candidate-->
+        <article class="Summary">
+            <p class="Summary-Content">Hyw Jones-Camp Counselor</p>
+            <p class="Summary-Content"> Add to Review</p>
+            <p class="Summary-Content">Download PDF</p>
+            <span class="Elipses" id="points">...</span>
+        </article>
+
+        <!--Button to show more content-->
+        <button id="textButton" class="ShowMore" onclick="toggleText()">Show More</button>
+
+        <!--Extra Content is hidden until the button is pressed and hides again when pressed-->
+        <article id="test" class="grid-container">
+        <span class="grid-container" id="moreText">
+            <p id="extraContent" class="Extra-Content">23</p>
+            <p id="extraContent" class="Extra-Content">Tent expert</p>
+            <p id="extraContent" class="Extra-Content">15th Jun-13th Jul</p>
+            <p id="extraContent" class="Extra-Content">University</p>
+            <p id="extraContent" class="Extra-Content">Creative Builder</p>
+            <p id="extraContent" class="Extra-Content">17th Jul-28th Aug</p>
+            <p id="extraContent" class="Extra-Content">English UK</p>
+            <p id="extraContent" class="Extra-Content">Good Attitude</p>
+            <p id="extraContent" class="Extra-Content">28th Aug-10th Sept</p>
+        </span>
+    </article>
+    </section>
+</html>
