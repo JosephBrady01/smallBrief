@@ -8,7 +8,7 @@ function toggleText() {
     }
   }
 
-
+ //This function adds a style of 520px, checks for it in th if statment and chnages it to 680px
   function toggleSize() {
     var toggle = document.getElementById('frame');
     toggle.setAttribute('style', 'height: 520px;');
@@ -17,6 +17,7 @@ function toggleText() {
       }
   }
 
+  //This function is the same as the last but it chnages the top style of the show more button
   function toggleButton() {
     var button = document.getElementById('textButton');
     button.setAttribute('style', 'top: 500px;')
@@ -25,7 +26,7 @@ function toggleText() {
     } 
   }
 
-
+//This function allows for all 3 functions to be called at the same time together
 function toggles() {
   toggleText();
   toggleSize();
