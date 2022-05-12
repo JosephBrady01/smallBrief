@@ -9,3 +9,25 @@ function toggleText() {
   }
 
 
+  function toggleSize() {
+    var toggle = document.getElementById('frame');
+    toggle.setAttribute('style', 'height: 520px;');
+    if (toggle.style.height === '520px') { 
+      toggle.style.height = '680px'
+      }
+  }
+
+  function toggleButton() {
+    var button = document.getElementById('textButton');
+    button.setAttribute('style', 'top: 500px;')
+    if (button.style.top === '500px') {
+      button.style.top = '660px'
+    } 
+  }
+
+
+function toggles() {
+  toggleText();
+  toggleSize();
+  toggleButton();
+}

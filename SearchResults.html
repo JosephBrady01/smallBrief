@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Questrial&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="SearchResults.css">
+    <link rel="stylesheet" href="./css/SearchResults.css">
     <script src="SearchResults.js"></script>
     <title>Search Result redesign</title>
 </head>
 
 <!--The function loads with the page so that the extra content stays hidden-->
-<body onload="toggleText()">
-    <section id-="test" class="frame">
+<body onload= toggleText()>
+    <section id="frame" class="frame-small">
 
         <section class="Profile-background">
             <img class="Profile-Picture" src="Images/ProfilePicture.jpg" alt="Profile Picture">
@@ -35,7 +35,7 @@
         </article>
 
         <!--Button to show more content-->
-        <button id="textButton" class="ShowMore" onclick="toggleText()">Show More</button>
+        <button id="textButton" class="show-more-small" onclick="toggles()">Show More</button>
 
         <!--Extra Content is hidden until the button is pressed and hides again when pressed-->
         <article id="test" class="grid-container">

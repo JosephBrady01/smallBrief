@@ -4,17 +4,30 @@ body {
     overflow: hidden;
 }
 
-.frame {
+.frame-small {
  top: 0px;
  left: 0px;
  width: 340px;
- height: 680px;
+ height: 520px;
  -webkit-border-radius: 10px;
  border-radius: 10px;
  border: 2px solid #000000;
- background:rgba(255,255,255,1);
+ background:#ffffff;
  margin-left: 23px;
  overflow: hidden;
+}
+
+.frame-big {
+    top: 0px;
+    left: 0px;
+    width: 340px;
+    height: 680px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background:#ffffff;
+    margin-left: 23px;
+    overflow: hidden;
 }
 
 /* the background has an z-index of 2 so it is at the front of all the other elements */
@@ -25,7 +38,7 @@ body {
  height: 340px;
  -webkit-border-radius: 10px;
  border-radius: 10px;
- background:rgba(76.9,131.45,195.5,1);
+ background:#4d83c4;
  position: absolute;
  z-index: 2;
 }
@@ -48,8 +61,8 @@ body {
     width: 342px;
     height: 286px;
     border-radius: 50%;
-    box-shadow:0px 4px 4px 1px rgba(0,0,0,0.25);
-    background:rgba(77,131,195,1);
+    box-shadow:0px 4px 4px 1px #00000040;
+    background:#4d83c3;
     position: absolute;
     z-index: 1;
 }
@@ -86,15 +99,28 @@ body {
     grid-column-gap: 21px;
 }
 
-.ShowMore {
-    top: 660px;
+.show-more-small {
+    top: 500px;
     left: 149px;
     text-align: center;
     position: absolute;
     border-radius: 50px;
 }
 
-.ShowMore:hover {
-    background-color:rgba(77,131,195,1);
+.show-more-small:hover {
+    background-color:#4d83c3;
+    color: white;
+}
+
+.show-more-big {
+    top: 680px;
+    left: 149px;
+    text-align: center;
+    position: absolute;
+    border-radius: 50px;
+}
+
+.show-more-big:hover {
+    background-color:#4d83c3;
     color: white;
 }
